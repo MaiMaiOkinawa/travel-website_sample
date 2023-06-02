@@ -1,0 +1,15 @@
+===CSS===
+transform: scale(0); /* Undisplace menu */
+transform-origin: top right;  /* menu appears from top right */
+transition: 0.2s linear;
+
+ background-attachment: fixed;
+
+   /* fix bg pic size  */
+  min-height: calc(100vh - 10rem);
+
+backdrop-filter: blur(0.4rem);/* This blurs bg-color */
+
+
+===JS===
+window.onscroll
