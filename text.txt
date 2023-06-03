@@ -10,6 +10,16 @@ transition: 0.2s linear;
 
 backdrop-filter: blur(0.4rem);/* This blurs bg-color */
 
+.about .grid .box img {
+  height: 20rem;
+  transition: 0.2s linear; <-- Set together
+}
+.about .grid .box:hover img {
+  transform: scale(1.1); <-- Set together
+}
+
+background-blend-mode: multiply;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
 
 ===JS===
 window.onscroll

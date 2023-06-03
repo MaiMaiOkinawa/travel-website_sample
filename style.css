@@ -18,6 +18,7 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
+  /* Color scrollbars */
   scrollbar-color: var(--main-color) var(--black);
   scrollbar-width: thin;
 }
@@ -51,6 +52,19 @@ body {
   background-color: var(--black);
   overflow-x: hidden;
   /* padding-bottom: 7rem; */
+}
+
+.container {
+  padding-top: 10rem;
+}
+
+.heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 7rem;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 section {
@@ -122,6 +136,7 @@ section {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .home .flex {
@@ -168,10 +183,237 @@ section {
   color: var(--light-white);
 }
 
+.about {
+  background: url("images/about-bg.jpg") no-repeat rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.about .details {
+  border-radius: 0.5rem;
+  background: url("images/details-bg.jpg") no-repeat rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 60vh;
+}
+
+.about .details .box {
+  width: 50rem;
+  background-color: var(--light-bg);
+  padding: 3rem 2rem;
+  text-align: center;
+  backdrop-filter: blur(0.4rem);
+  border-radius: 0.5rem;
+}
+
+.about .details .box h3 {
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.about .details .box p {
+  padding-bottom: 1rem 0;
+  color: var(--light-white);
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.about .details .box .btn {
+  display: inline-block;
+  /* Shrink the btn */
+  width: auto;
+}
+
+.about .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.about .grid .box {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(0.4rem);
+  border-radius: 0.5rem;
+}
+
+.about .grid .box img {
+  height: 20rem;
+  transition: 0.2s linear;
+}
+
+.about .grid .box h3 {
+  padding: 2rem 0;
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.about .grid .box p {
+  line-height: 2;
+  font-size: 1.5rem;
+  color: var(--light-white);
+}
+
+.about .grid .box:hover {
+  background-color: var(--light-black);
+}
+
+.about .grid .box:hover img {
+  transform: scale(1.1);
+}
+
+.reviews {
+  background: url("images/reviews-bg.jpg") no-repeat rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.reviews .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35rem);
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.reviews .grid .box {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(0.4rem);
+  border-radius: 0.5rem;
+  transition: 0.2s linear;
+}
+
+.reviews .grid .box:hover {
+  background-color: var(--light-black);
+}
+
+.reviews .grid img {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  margin: 1rem;
+}
+
+.reviews .grid .box h3 {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.reviews .grid .box p {
+  padding: 1rem 0;
+  line-height: 2;
+  font-size: 1.5rem;
+  color: var(--light-white);
+}
+
+.reviews .grid .box .starts {
+  margin-top: 1rem;
+}
+
+.reviews .grid .box .starts i {
+  font-size: 1.8rem;
+  color: var(--main-color);
+}
+
+.tours {
+  background: url("images/tour-bg.jpg") no-repeat rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.tours .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35rem);
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.tours .grid .box {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  backdrop-filter: blur(0.4rem);
+  border-radius: 0.5rem;
+  transition: 0.2s linear;
+  position: relative;
+}
+
+.tours .grid .box:hover {
+  background-color: var(--light-black);
+}
+
+.tours .grid .box .price {
+  position: absolute;
+  top: 2.9rem;
+  left: 3rem;
+  border-radius: 0.5rem;
+  background: var(--light-black);
+  font-size: 1.8rem;
+  padding: 0.8rem 1.5rem;
+}
+
+.tours .grid .box:hover .price {
+  background-color: var(--black);
+}
+
+.tours .grid .box .price i {
+  color: var(--main-color);
+}
+
+.tours .grid .box .price span {
+  color: var(--white);
+  margin-left: 0.5rem;
+}
+
+.tours .grid .box .image {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tours .grid .box .name {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.tours .grid .box .address {
+  font-size: 1.7rem;
+  color: var(--light-white);
+  text-transform: capitalize;
+  line-height: 1.5;
+  padding: 0.5rem 0;
+}
+
 /* media queries */
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+  .heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -215,10 +457,18 @@ section {
   .header .flex .navbar a:hover {
     background-color: var(--light-bg);
   }
+
+  .heading {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
   }
 }
