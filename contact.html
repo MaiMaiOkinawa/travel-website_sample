@@ -16,7 +16,103 @@
   <body>
     <!-- header section starts -->
 
+    <header class="header">
+      <section class="flex">
+        <a href="home.html" class="logo">Travia.</a>
+
+        <nav class="navbar">
+          <a href="home.html">home</a>
+          <a href="about.html">about</a>
+          <a href="tours.html">tours</a>
+          <a href="destinations.html">destinations</a>
+          <a href="contact.html">contact</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </section>
+    </header>
+
+    <!-- header section ends -->
+
     <!-- contact section starts -->
+    <div class="container contact">
+      <h1 class="heading">contact us</h1>
+
+      <section>
+        <div class="row">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.571414086214!2d2.2125848113639304!3d41.40511309477623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a35c9e182839%3A0x51c721d0d057d503!2sPasseig%20de%20Garcia%20F%C3%A0ria%2C%2075%2C%2008019%20Barcelona%2C%20Spain!5e0!3m2!1sen!2sus!4v1685898813075!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <form action="" method="post">
+            <h3>get in touch</h3>
+            <input
+              class="box"
+              type="text"
+              name="name"
+              required
+              maxlength="50"
+              placeholder="enter your name"
+            />
+            <input
+              class="box"
+              type="email"
+              name="email"
+              required
+              maxlength="50"
+              placeholder="enter your address"
+            />
+            <input
+              class="box"
+              type="number"
+              name="number"
+              required
+              maxlength="50"
+              min="0"
+              max="9999999999"
+              placeholder="enter your number"
+            />
+            <textarea
+              name="message"
+              class="box"
+              required
+              maxlength="1000"
+            ></textarea>
+            <input type="submit" value="send message" name="send" class="btn" />
+          </form>
+        </div>
+
+        <div class="grid">
+          <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>phone number</h3>
+            <a href="tel:1234567890">+123-456-7890</a>
+            <a href="tel:1112223333">+111-222-3333</a>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>email address</h3>
+            <a href="mailto:@gmail.com">abcde@gmail.com</a>
+            <a href="mailto:@gmail.com">fghijk@gmail.com</a>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>office address</h3>
+            <a href="#">Passeig de Garcia Fària 75, Barcelona, 08019, Spain</a>
+          </div>
+        </div>
+
+        <div class="credit">
+          &copy; copyright @ 2023 by
+          <span>mr. web designer | all rights reserved!</span>
+        </div>
+      </section>
+    </div>
 
     <!-- contact section ends -->
 

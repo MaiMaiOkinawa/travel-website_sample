@@ -1,3 +1,8 @@
+===HTML===
+
+<a href="tel:1234567890">+123-456-7890</a>
+<a href="tel:1112223333">+111-222-3333</a>
+
 ===CSS===
 transform: scale(0); /* Undisplace menu */
 transform-origin: top right;  /* menu appears from top right */
@@ -20,6 +25,12 @@ backdrop-filter: blur(0.4rem);/* This blurs bg-color */
 
 background-blend-mode: multiply;
 https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
+
+/* Three values: flex-grow | flex-shrink | flex-basis */
+flex: 1 1 40rem;
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+
+text-transform: none;
 
 ===JS===
 window.onscroll
