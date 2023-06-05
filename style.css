@@ -519,17 +519,15 @@ section {
 }
 
 .contact .grid {
-  margin-top: 3rem;
+  margin: 3rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, 30rem);
-  align-items: flex-start;
+
   justify-content: center;
   gap: 1.5rem;
 }
 
 .contact .grid .box {
-  overflow: hidden;
-  border-radius: 0.5rem;
   padding: 3rem 2rem;
   background-color: var(--light-bg);
   border-radius: 0.5rem;
@@ -546,19 +544,20 @@ section {
   border-color: var(--light-black);
   border-radius: 0.5rem;
   color: var(--white);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--light-black);
 }
 
 .contact .grid .box h3 {
+  padding: 0.5rem 0;
   font-size: 2rem;
   color: var(--main-color);
-  padding: 1rem 0;
 }
 
 .contact .grid .box a {
   /* Disply <a> tags vertically */
   display: block;
-  scroll-padding-top: 1rem;
+  padding-top: 1rem;
   font-size: 1.6rem;
   color: var(--light-white);
   line-height: 1.5;
@@ -568,6 +567,18 @@ section {
 .contact .grid .box a:hover {
   color: var(--white);
   text-decoration: underline;
+}
+
+.contact .credit {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--light-white);
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.contact .credit span {
+  color: var(--main-color);
 }
 
 /* media queries */

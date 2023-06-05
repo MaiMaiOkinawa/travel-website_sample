@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
@@ -15,7 +17,7 @@
   </head>
   <body>
     <!-- header section starts -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
       <section class="flex">
         <a href="tours.html" class="logo">Travia.</a>
 
@@ -34,11 +36,11 @@
 
     <!-- tours section starts -->
     <div class="container tours">
-      <h1 class="heading">popular places</h1>
+      <h1 class="heading" data-aos="zoom-out">popular places</h1>
 
       <section class="grid">
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="price"><i class="fas fa-dollar-sign"><span>1299</span></i></div>
           <img src="images/tour-img-1.webp" class="image" alt="">
           <h3 class="name">taj mahal</h3>
@@ -46,7 +48,7 @@
           <a href="#" class="btn">send enquiry</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="price"><i class="fas fa-dollar-sign"><span>1999</span></i></div>
           <img src="images/tour-img-2.webp" class="image" alt="">
           <h3 class="name">tokyo</h3>
@@ -54,7 +56,7 @@
           <a href="#" class="btn">send enquiry</a>
         </div>
 
-         <div class="box">
+         <div class="box" data-aos="fade-up">
           <div class="price"><i class="fas fa-dollar-sign"><span>3000</span></i></div>
           <img src="images/tour-img-3.webp" class="image" alt="">
           <h3 class="name">hawaii</h3>
@@ -62,7 +64,7 @@
           <a href="#" class="btn">send enquiry</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="price"><i class="fas fa-dollar-sign"><span>1203</span></i></div>
           <img src="images/tour-img-4.webp" class="image" alt="">
           <h3 class="name">london</h3>
@@ -70,7 +72,7 @@
           <a href="#" class="btn">send enquiry</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="price"><i class="fas fa-dollar-sign"><span>1999</span></i></div>
           <img src="images/tour-img-5.webp" class="image" alt="">
           <h3 class="name">lotus temple</h3>
@@ -78,7 +80,7 @@
           <a href="#" class="btn">send enquiry</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="price"><i class="fas fa-dollar-sign"><span>1000</span></i></div>
           <img src="images/tour-img-6.webp" class="image" alt="">
           <h3 class="name">arc de triomphe</h3>
@@ -94,6 +96,7 @@
     </div>
     <!-- tours section ends -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- custom js file link -->
     <script src="script.js"></script>
   </body>

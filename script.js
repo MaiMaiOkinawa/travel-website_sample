@@ -16,3 +16,8 @@ guests.forEach((guest) => {
       guest.value = guest.value.slice(0, guest.maxLength);
   };
 });
+
+AOS.init({
+  duration: 400,
+  delay: 200,
+});

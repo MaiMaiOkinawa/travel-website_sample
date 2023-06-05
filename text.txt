@@ -32,5 +32,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/flex
 
 text-transform: none;
 
+Removing align-items: flex-start make the box size same as others
+align-items: flex-start;
+
 ===JS===
 window.onscroll

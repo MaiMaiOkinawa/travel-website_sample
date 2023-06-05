@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
@@ -15,7 +17,7 @@
   </head>
   <body>
     <!-- header section starts -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
       <section class="flex">
         <a href="about.html" class="logo">Travia.</a>
 
@@ -34,10 +36,10 @@
 
     <!-- about section starts -->
     <div class="container about">
-      <h1 class="heading">about us</h1>
+      <h1 class="heading" data-aos="zoom-out">about us</h1>
       <section>
         <div class="details">
-          <div class="box">
+          <div class="box" data-aos="zoom-in">
             <h3>why choose us?</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -49,7 +51,7 @@
         </div>
 
         <div class="grid">
-          <div class="box">
+          <div class="box" data-aos="fade-in">
             <img src="images/about-img-1.svg" alt="" />
             <h3>easy bookings</h3>
             <p>
@@ -58,7 +60,7 @@
             </p>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="fade-in" data-aos-delay="400">
             <img src="images/about-img-2.svg" alt="" />
             <h3>travel world</h3>
             <p>
@@ -67,7 +69,7 @@
             </p>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="fade-in" data-aos-delay="600">
             <img src="images/about-img-3.svg" alt="" />
             <h3>enjoy tours</h3>
             <p>
@@ -82,9 +84,9 @@
 
     <!-- reviews section starts -->
     <div class="container reviews">
-      <h1 class="heading">client's reviews</h1>
+      <h1 class="heading" data-aos="zoom-out">client's reviews</h1>
       <section class="grid">
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <img src="images/pic-1.png" alt="" />
           <h3>john deo</h3>
           <p>
@@ -101,7 +103,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <img src="images/pic-2.png" alt="" />
           <h3>john deo</h3>
           <p>
@@ -118,7 +120,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <img src="images/pic-3.png" alt="" />
           <h3>john deo</h3>
           <p>
@@ -135,7 +137,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <img src="images/pic-4.png" alt="" />
           <h3>john deo</h3>
           <p>
@@ -152,7 +154,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <img src="images/pic-5.png" alt="" />
           <h3>john deo</h3>
           <p>
@@ -169,7 +171,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <img src="images/pic-6.png" alt="" />
           <h3>john deo</h3>
           <p>
@@ -189,6 +191,7 @@
     </div>
     <!-- reviews section ends -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- custom js file link -->
     <script src="script.js"></script>
   </body>

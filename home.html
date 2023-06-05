@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
@@ -13,9 +15,9 @@
     <link rel="stylesheet" href="style.css" />
     <title>Home</title>
   </head>
-  <body>
+  <body style="overflow: hidden">
     <!-- header section starts -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
       <section class="flex">
         <a href="home.html" class="logo">Travia.</a>
 
@@ -34,8 +36,8 @@
 
     <!-- home section starts -->
 
-    <div class="container home">
-      <section class="flex">
+    <div class="container home" data-aos="zoom-in">
+      <section class="flex" data-aos="zoom-in" data-aos-delay="600">
         <form action="" method="post">
           <h3>Search Your Tour</h3>
           <p>where to</p>
@@ -67,6 +69,13 @@
 
     <!-- home section ends -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 400,
+        delay: 200,
+      });
+    </script>
     <!-- custom js file link -->
     <script src="script.js"></script>
   </body>
