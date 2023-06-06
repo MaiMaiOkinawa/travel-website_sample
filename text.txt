@@ -33,7 +33,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/flex
 text-transform: none;
 
 Removing align-items: flex-start make the box size same as others
-align-items: flex-start;
+a
+
+Animate on scroll library
+https://github.com/michalsnik/aos
+https://css-tricks.com/aos-css-driven-scroll-animation-library/
 
 ===JS===
 window.onscroll
